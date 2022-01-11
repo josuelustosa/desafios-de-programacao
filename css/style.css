@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+    font-family: "Courier New", Courier;
+}
+
+.navbar {
+    padding-top: 25px;
+}
+
+nav {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    background: #000000;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.logo {
+    width: 25%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 25px;
+}
+
+.menu-area li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu-area a {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.menu-area a:hover {
+    background: deeppink;
+    color: #fff;
+}
+
+nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+}
+
+nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+}
+
+.h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: rgb(254, 86, 38);
+}
+
+.h2 {
+    font-size: 28px;
+}
+
+.p {
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+a {
+    color: rgb(254, 86, 38);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(254, 86, 38);
+    /* font-weight: bold;
+    background-color: rgb(254, 86, 38);
+    padding: 4px 4px; */
+    /* color: #f2f2f2; */
+}
+
+
+/* Botão Primário */
+
+.btn-primary {
+    font-family: Galyon-Bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 86, 38);
+    padding: 12px 14px;
+    margin: 20px;
+    border: 3px solid rgb(254, 86, 38);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ec2300;
+    border: 3px solid #ec2300;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin: 0% 10% 0% 10%;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0px;
+    /* height: 100px; */
+    background-color: grey;
+}
+
+.nav {
+    width: 250px;
+    /* width: 30%; */
+    /* height: 100px; */
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: gainsboro;
+    margin: 0% 10% 0% 10%;
+}
+
+.article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    padding: 10px 10px;
+    border-bottom: 10px solid;
+    background-color: gainsboro;
+}
+
+.linha-horizontal {
+    height: 3px;
+    background-color: #1a1a1a;
+}
+
+footer {
+    background-color: rgb(30, 30, 30);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    /* margin: 0%;   */
+    width: 100%;
+}
+
+.filter-orange {
+    filter: invert(42%) sepia(74%) saturate(2925%) hue-rotate(346deg) brightness(101%) contrast(99%);
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
