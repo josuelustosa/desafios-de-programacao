@@ -4,32 +4,34 @@
 
 body {
     background-color: #f2f2f2;
-    color: #1a1a1a;
-    font-family: "Courier New", Courier;
+    color: rgb(30, 30, 30);
+    font-family: 'DM Sans', sans-serif;
 }
 
 .navbar {
-    padding-top: 25px;
+    /* padding-top: 25px; */
 }
 
 nav {
     position: relative;
-    width: calc(100% - 60px);
+    /* width: calc(100% - 60px); */
     margin: 0 auto;
-    background: #000000;
+    background-color: rgb(30, 30, 30);
     z-index: 1;
     text-align: right;
-    padding-right: 2%;
+    /* padding-right: 2%; */
 }
 
 .logo {
-    width: 25%;
+    width: 35%;
     float: left;
     text-transform: uppercase;
+    /* display: block; */
+    /* position: relative; */
     color: #fff;
-    font-size: 25px;
+    font-size: 14px;
     text-align: left;
-    padding: 10px 25px;
+    padding: 25px 20px;
 }
 
 .menu-area li {
@@ -39,24 +41,26 @@ nav {
 
 .menu-area a {
     color: #fff;
+    text-align: center;
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: block;
-    padding: 15px 25px;
-    font-size: 14px;
-    line-height: 30px;
+    padding: 15px 20px;
+    font-size: 10px;
+    /* line-height: 30px;   */
     position: relative;
     z-index: 1;
     text-decoration: none;
 }
 
 .menu-area a:hover {
-    background: deeppink;
+    background: rgb(254, 86, 38);
     color: #fff;
 }
 
-nav:before {
+
+/* nav:before {
     position: absolute;
     content: '';
     border-top: 10px solid #333;
@@ -65,9 +69,10 @@ nav:before {
     border-bottom: 10px solid transparent;
     top: 100%;
     left: 0;
-}
+} */
 
-nav:after {
+
+/* nav:after {
     position: absolute;
     content: '';
     border-top: 10px solid #333;
@@ -76,7 +81,7 @@ nav:after {
     border-bottom: 10px solid transparent;
     top: 100%;
     right: 0;
-}
+} */
 
 .h1 {
     font-size: 36px;
@@ -89,7 +94,7 @@ nav:after {
 }
 
 .p {
-    font-size: 20px;
+    font-size: 18px;
     color: #4d4d4d;
 }
 
@@ -110,11 +115,12 @@ a:hover {
 /* Botão Primário */
 
 .btn-primary {
-    font-family: Galyon-Bold;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(254, 86, 38);
     padding: 12px 14px;
-    margin: 20px;
+    margin: 4px;
     border: 3px solid rgb(254, 86, 38);
     font-size: 18px;
     letter-spacing: 1px;
@@ -128,6 +134,55 @@ a:hover {
     background-color: #ec2300;
     border: 3px solid #ec2300;
     color: rgb(255, 255, 255);
+}
+
+.btn-outline {
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(254, 86, 38);
+    background-color: transparent;
+    padding: 8px 12px;
+    margin: 4px;
+    border: 3px solid rgb(254, 86, 38);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Botão Secundário - Vazado */
+
+.btn-outline:hover {
+    background-color: rgb(254, 86, 38);
+    border: 3px solid rgb(254, 86, 38);
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+#icon {
+    font-size: 16px;
+    padding: 0px 4px;
+    /* position: relative; */
+    /* width: calc(100% - 20px); */
+    /* margin: 0 auto; */
 }
 
 main {
@@ -161,7 +216,7 @@ header {
 
 .card {
     width: 350px;
-    height: 200px;
+    /* height: 200px; */
     display: inline-block;
     padding: 10px 10px;
     border-bottom: 10px solid;
@@ -171,6 +226,8 @@ header {
 .linha-horizontal {
     height: 3px;
     background-color: #1a1a1a;
+    margin: 10px 0px;
+    /* padding: 8px 16px; */
 }
 
 footer {
