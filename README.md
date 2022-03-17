@@ -8,6 +8,3 @@ Os desafios propostos consistiam apenas em criar uma página de receita e realiz
 ## 🛠️ Ferramentas Utilizadas
  - Ícones: https://feathericons.com/
  - Fontes: https://fonts.google.com/
-
-## 🔗 Confira o projeto publicado no Netlify
-[💻 Site de Receitas](https://desafios-de-programacao.netlify.app/index.html)
